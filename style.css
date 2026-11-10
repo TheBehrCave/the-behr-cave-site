@@ -1,0 +1,11 @@
+:root { color-scheme: dark; --ink:#f6f2ff; --muted:#b7afc4; --bg:#09070f; --panel:#16121d; --red:#db3b50; --blue:#3b82d0; --gold:#caa66b; }
+* { box-sizing:border-box; } html { scroll-behavior:smooth; } body { margin:0; background:var(--bg); color:var(--ink); font:17px/1.7 ui-sans-serif,system-ui,sans-serif; }
+a { color:inherit; } .site-header { position:sticky; top:0; z-index:5; display:flex; align-items:center; gap:28px; padding:16px clamp(18px,5vw,72px); border-bottom:1px solid #ffffff1b; background:#09070fe8; backdrop-filter:blur(16px); }
+.site-brand { margin-right:auto; font-size:1.08rem; font-weight:800; text-decoration:none; } nav { display:flex; flex-wrap:wrap; gap:16px; } nav a { color:var(--muted); font-size:.86rem; text-decoration:none; } nav a:hover { color:var(--ink); }
+main { width:min(1180px,100%); margin:auto; padding:0 22px 90px; } .hero { min-height:72vh; display:grid; align-content:center; padding:80px 0; border-bottom:1px solid #ffffff18; }
+.eyebrow { margin:0 0 10px; color:var(--gold); font-size:.76rem; font-weight:800; text-transform:uppercase; letter-spacing:.14em; } h1 { max-width:980px; margin:0; font:800 clamp(3.3rem,9vw,7.8rem)/.94 ui-serif,Georgia,serif; }
+.hero>p:last-child { max-width:760px; color:var(--muted); font-size:clamp(1.05rem,2vw,1.35rem); } .story { padding:64px 0; border-bottom:1px solid #ffffff12; }
+.story h2 { max-width:850px; margin:0; font:750 clamp(2rem,5vw,4.2rem)/1 ui-serif,Georgia,serif; } .story p { max-width:780px; margin:0; color:var(--muted); font-size:1.08rem; }
+.feature { margin:48px 0; } .feature img { display:block; width:100%; max-height:720px; object-fit:cover; border:1px solid #ffffff18; border-radius:6px; } figcaption { margin-top:8px; color:var(--muted); font-size:.8rem; }
+footer { display:flex; justify-content:space-between; gap:20px; padding:30px clamp(18px,5vw,72px); border-top:1px solid #ffffff1b; color:var(--muted); } footer strong { color:var(--ink); }
+@media (max-width:760px) { .site-header { align-items:flex-start; } nav { display:none; } .hero { min-height:64vh; } footer { flex-direction:column; } }

@@ -1,0 +1,6 @@
+{
+  "project": "the-behr-cave-current",
+  "domain": "thebehrcave.net",
+  "provider": "github-pages-static",
+  "server_required": false
+}
